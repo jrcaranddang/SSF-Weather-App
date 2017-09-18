@@ -1,1 +1,4 @@
-<md-toolbar color="primary">{{ myName }}</md-toolbar>
+<md-toolbar color="primary">{{ title }}</md-toolbar>
+<div *ngFor="let weather of weatherData">
+    <p>{{weather.display_location.full}} {{weather.temp_f}}</p>
+</div>
