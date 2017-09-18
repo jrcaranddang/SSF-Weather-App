@@ -1,4 +1,4 @@
 <md-toolbar color="primary">{{ title }}</md-toolbar>
-<md-card *ngFor="let weather of weatherData">
+<md-card class="city-card" *ngFor="let weather of weatherData">
     <p>{{weather.display_location.full}} {{weather.temp_f}}</p>
 </md-card>
