@@ -1,4 +1,15 @@
 <md-toolbar color="primary">{{ title }}</md-toolbar>
-<md-card class="city-card" *ngFor="let weather of weatherData">
-    <p>{{weather.display_location.full}} {{weather.temp_f}}</p>
-</md-card>
+
+<div class="grid-container">
+    <div id="left-col">
+
+    </div>
+    <div id="center-col">
+        <md-card class="city-card" *ngFor="let weather of weatherData">
+            <p>{{weather.display_location.full}} <br> Temp: {{weather.temp_f}} F</p>
+        </md-card>
+    </div>
+    <div id="right-col">
+
+    </div>
+</div>

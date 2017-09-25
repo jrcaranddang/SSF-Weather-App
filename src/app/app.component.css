@@ -1,4 +1,26 @@
-.city-card {
-    max-width: 400px;
-    margin: 10px auto;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* grid-template-rows: 100%; */
+    grid-gap: 1rem;
 }
+
+#left-col {
+    background-color: #fff;
+}
+
+#center-col {
+    background-color: #01C20B;
+}
+
+#center-col .city-card {
+    background-color: #555;
+    /* max-width: 400px; */
+    margin-top: 1rem;
+}
+
+#right-col {
+    background-color: #FC9520;
+}
+
+
