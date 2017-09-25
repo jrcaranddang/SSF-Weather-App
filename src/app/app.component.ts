@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WeatherService } from './weather.service';
 
 const MOCKDATA: Object[] = [
   {
@@ -42,5 +43,13 @@ const MOCKDATA: Object[] = [
 export class AppComponent {
   title: string = 'Weather App';
   weatherData = MOCKDATA;
+
+  constructor( public weather$: WeatherService ) {
+    this.weather$.getWeatherData()
+        .subscribe(
+            data => console.log("data", data)
+        )
+    console.log(this.weather$.foo)
+  }
 
 }
